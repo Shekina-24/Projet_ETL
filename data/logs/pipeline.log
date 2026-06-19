@@ -1,0 +1,608 @@
+2026-06-18 12:38:48,808 [INFO] 
+🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-06-18 12:38:48,809 [INFO] PIPELINE ETL DVF | années=[2022, 2023] | depts=['75'] | mode=full
+2026-06-18 12:38:48,809 [INFO] 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+
+2026-06-18 12:38:49,581 [INFO] [init_db] Base initialisée : /home/claude/projet_etl_dvf/data/dw_dvf.db
+2026-06-18 12:38:49,788 [INFO] 
+============================================================
+2026-06-18 12:38:49,788 [INFO] ▶ Démarrage : Phase 1 - Extraction
+2026-06-18 12:38:49,788 [INFO] ============================================================
+2026-06-18 12:38:49,797 [INFO] ============================================================
+2026-06-18 12:38:49,797 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 12:38:49,797 [INFO] ============================================================
+2026-06-18 12:38:49,797 [INFO] [download_dvf] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv
+2026-06-18 12:38:50,172 [ERROR] [download_dvf] Erreur HTTP 403 pour https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv
+2026-06-18 12:38:51,174 [INFO] ============================================================
+2026-06-18 12:38:51,174 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 12:38:51,175 [INFO] ============================================================
+2026-06-18 12:38:51,175 [INFO] [download_dvf] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv
+2026-06-18 12:38:51,246 [ERROR] [download_dvf] Erreur HTTP 403 pour https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv
+2026-06-18 12:38:53,247 [INFO] ============================================================
+2026-06-18 12:38:53,248 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 12:38:53,248 [INFO] ============================================================
+2026-06-18 12:38:53,248 [INFO] [download_dvf] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv
+2026-06-18 12:38:53,320 [ERROR] [download_dvf] Erreur HTTP 403 pour https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv
+2026-06-18 12:38:53,327 [ERROR] ❌ Phase 1 - Extraction a échoué après 3.53s : RetryError[<Future at 0x7f22de90f230 state=finished raised HTTPError>]
+2026-06-18 12:38:53,327 [ERROR] Pipeline interrompu à la Phase 1.
+2026-06-18 12:40:14,318 [INFO] 
+🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-06-18 12:40:14,319 [INFO] PIPELINE ETL DVF | années=[2022, 2023] | depts=['75'] | mode=full
+2026-06-18 12:40:14,319 [INFO] 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+
+2026-06-18 12:40:14,557 [INFO] [init_db] Base initialisée : /home/claude/projet_etl_dvf/data/dw_dvf.db
+2026-06-18 12:40:14,699 [INFO] 
+============================================================
+2026-06-18 12:40:14,699 [INFO] ▶ Démarrage : Phase 1 - Extraction
+2026-06-18 12:40:14,699 [INFO] ============================================================
+2026-06-18 12:40:14,708 [INFO] ============================================================
+2026-06-18 12:40:14,708 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 12:40:14,708 [INFO] ============================================================
+2026-06-18 12:40:14,708 [INFO] [download_dvf] Fichier déjà présent : /home/claude/projet_etl_dvf/data/raw/dvf_2022_75.csv — téléchargement ignoré.
+2026-06-18 12:40:14,708 [INFO] [download_dvf] Fichier déjà présent : /home/claude/projet_etl_dvf/data/raw/dvf_2023_75.csv — téléchargement ignoré.
+2026-06-18 12:40:14,710 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 12:40:14,776 [INFO]   → 6,324 lignes chargées
+2026-06-18 12:40:14,777 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 12:40:14,814 [INFO]   → 6,287 lignes chargées
+2026-06-18 12:40:14,817 [INFO] [load_raw_files] Total : 12,611 lignes, 22 colonnes
+2026-06-18 12:40:14,818 [INFO] [profile] Calcul du profilage…
+2026-06-18 12:40:15,024 [INFO] [profile] Rapport de profilage sauvegardé : /home/claude/projet_etl_dvf/output/profile_dvf.csv
+2026-06-18 12:40:15,029 [WARNING] [profile] Colonnes avec >50% de valeurs manquantes :
+        colonne  pct_manquants
+surface_terrain          70.05
+2026-06-18 12:40:15,029 [INFO] PHASE 1 terminée — 12,611 lignes extraites
+2026-06-18 12:40:15,041 [INFO] ✅ Phase 1 - Extraction terminée en 0.33s — 12,611 lignes en sortie
+2026-06-18 12:40:30,431 [INFO] 
+🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-06-18 12:40:30,431 [INFO] PIPELINE ETL DVF | années=[2022, 2023] | depts=['75'] | mode=full
+2026-06-18 12:40:30,431 [INFO] 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+
+2026-06-18 12:40:30,645 [INFO] [init_db] Base initialisée : /home/claude/projet_etl_dvf/data/dw_dvf.db
+2026-06-18 12:40:30,729 [INFO] 
+============================================================
+2026-06-18 12:40:30,729 [INFO] ▶ Démarrage : Phase 1 - Extraction
+2026-06-18 12:40:30,729 [INFO] ============================================================
+2026-06-18 12:40:30,735 [INFO] ============================================================
+2026-06-18 12:40:30,735 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 12:40:30,735 [INFO] ============================================================
+2026-06-18 12:40:30,735 [INFO] [download_dvf] Fichier déjà présent : /home/claude/projet_etl_dvf/data/raw/dvf_2022_75.csv — téléchargement ignoré.
+2026-06-18 12:40:30,736 [INFO] [download_dvf] Fichier déjà présent : /home/claude/projet_etl_dvf/data/raw/dvf_2023_75.csv — téléchargement ignoré.
+2026-06-18 12:40:30,737 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 12:40:30,756 [INFO]   → 6,324 lignes chargées
+2026-06-18 12:40:30,757 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 12:40:30,775 [INFO]   → 6,287 lignes chargées
+2026-06-18 12:40:30,777 [INFO] [load_raw_files] Total : 12,611 lignes, 22 colonnes
+2026-06-18 12:40:30,778 [INFO] [profile] Calcul du profilage…
+2026-06-18 12:40:30,983 [INFO] [profile] Rapport de profilage sauvegardé : /home/claude/projet_etl_dvf/output/profile_dvf.csv
+2026-06-18 12:40:30,986 [WARNING] [profile] Colonnes avec >50% de valeurs manquantes :
+        colonne  pct_manquants
+surface_terrain          70.05
+2026-06-18 12:40:30,986 [INFO] PHASE 1 terminée — 12,611 lignes extraites
+2026-06-18 12:40:30,992 [INFO] ✅ Phase 1 - Extraction terminée en 0.26s — 12,611 lignes en sortie
+2026-06-18 12:40:30,994 [INFO] 
+============================================================
+2026-06-18 12:40:30,994 [INFO] ▶ Démarrage : Phase 2 - Nettoyage
+2026-06-18 12:40:30,994 [INFO] ============================================================
+2026-06-18 12:40:30,994 [INFO] ============================================================
+2026-06-18 12:40:30,994 [INFO] PHASE 2 — NETTOYAGE
+2026-06-18 12:40:30,994 [INFO] ============================================================
+2026-06-18 12:40:30,994 [INFO] Lignes en entrée : 12,611
+2026-06-18 12:40:30,994 [INFO] [dedup] Déduplication des mutations…
+2026-06-18 12:40:37,945 [INFO] [dedup] 12,611 lignes → 12,000 mutations uniques (supprimé 611 doublons)
+2026-06-18 12:40:37,965 [INFO] [types] Conversion des types…
+2026-06-18 12:40:37,994 [INFO] [types] Conversions appliquées.
+2026-06-18 12:40:37,998 [INFO] [filter] Filtrage des anomalies…
+2026-06-18 12:40:38,004 [INFO] [filter] Après filtre nature_mutation : 11,641 lignes
+2026-06-18 12:40:38,014 [INFO] [filter] Après tous les filtres : 11,522 lignes conservées
+2026-06-18 12:40:38,081 [INFO] [output] dvf_clean.csv → 11,522 lignes
+2026-06-18 12:40:38,085 [INFO] [output] rejets_clean.csv → 478 lignes
+2026-06-18 12:40:38,085 [INFO] [output] stats_clean.json sauvegardé
+2026-06-18 12:40:38,086 [INFO] PHASE 2 terminée — 11,522 mutations nettes / 478 rejetées
+2026-06-18 12:40:38,091 [INFO] ✅ Phase 2 - Nettoyage terminée en 7.09s — 11,522 lignes en sortie
+2026-06-18 12:40:38,094 [INFO] 
+============================================================
+2026-06-18 12:40:38,094 [INFO] ▶ Démarrage : Phase 3 - Enrichissement
+2026-06-18 12:40:38,094 [INFO] ============================================================
+2026-06-18 12:40:38,094 [INFO] ============================================================
+2026-06-18 12:40:38,094 [INFO] PHASE 3 — ENRICHISSEMENT
+2026-06-18 12:40:38,094 [INFO] ============================================================
+2026-06-18 12:40:38,094 [INFO] Lignes en entrée : 11,522
+2026-06-18 12:40:38,094 [INFO] [communes] Chargement depuis le cache : /home/claude/projet_etl_dvf/data/raw/communes_insee.csv
+2026-06-18 12:40:38,095 [INFO] [communes] Chargé : 20 communes (sep=',', enc=utf-8)
+2026-06-18 12:40:38,095 [INFO] [communes] Colonnes disponibles : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-18 12:40:38,097 [INFO] [communes] Référentiel normalisé : 20 communes, colonnes : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-18 12:40:38,098 [INFO] [geo] Jointure géographique…
+2026-06-18 12:40:38,106 [INFO] [geo] Taux de jointure : 100.0% (11,522/11,522)
+2026-06-18 12:40:38,109 [INFO] [prix_m2] Calculé pour 9,579 mutations
+2026-06-18 12:40:38,115 [INFO] [categorie_prix] Distribution : {'premium': 6580, 'eleve': 2668, 'bas': 1943, 'moyen': 331}
+2026-06-18 12:40:38,128 [INFO] [temps] Colonnes temporelles ajoutées : annee, mois, trimestre, semestre
+2026-06-18 12:40:38,132 [INFO] [grand_appart] 2,935 grands appartements (>= 4 pièces)
+2026-06-18 12:40:38,240 [INFO] [output] dvf_enrich.csv → 11,522 lignes
+2026-06-18 12:40:38,241 [INFO] PHASE 3 terminée — 11,522 mutations enrichies
+2026-06-18 12:40:38,246 [INFO] ✅ Phase 3 - Enrichissement terminée en 0.15s — 11,522 lignes en sortie
+2026-06-18 12:40:38,246 [INFO] 
+============================================================
+2026-06-18 12:40:38,246 [INFO] ▶ Démarrage : Phase 4 - Chargement DW
+2026-06-18 12:40:38,246 [INFO] ============================================================
+2026-06-18 12:40:38,246 [INFO] ============================================================
+2026-06-18 12:40:38,246 [INFO] PHASE 4 — CHARGEMENT DW
+2026-06-18 12:40:38,246 [INFO] ============================================================
+2026-06-18 12:40:38,246 [INFO] Lignes en entrée : 11,522 | Mode : full
+2026-06-18 12:40:38,246 [INFO] [init_db] Base initialisée : /home/claude/projet_etl_dvf/data/dw_dvf.db
+2026-06-18 12:40:38,246 [INFO] [staging] Chargement en staging…
+2026-06-18 12:40:38,320 [INFO] [staging] 11,522 lignes insérées en staging
+2026-06-18 12:40:38,326 [INFO] [dim_commune] 20 communes en base
+2026-06-18 12:40:38,329 [INFO] [dim_type_local] 3 types chargés
+2026-06-18 12:40:38,332 [INFO] [dim_nature_mutation] 1 natures chargées
+2026-06-18 12:40:38,372 [INFO] [dim_date] 730 dates chargées
+2026-06-18 12:40:39,173 [INFO] [fact] 11,522 mutations insérées / 0 rejetées
+2026-06-18 12:40:39,183 [INFO] [validation] fact_mutation : 11,522 lignes
+2026-06-18 12:40:39,183 [INFO] [validation] FK null (sk_commune) : 0
+2026-06-18 12:40:39,183 [INFO] PHASE 4 terminée — 11,522 nouvelles mutations dans fact_mutation (total: 11,522)
+2026-06-18 12:40:39,186 [INFO] ✅ Phase 4 - Chargement DW terminée en 0.94s — 11,522 lignes en sortie
+2026-06-18 12:40:39,188 [INFO] [rapport] Rapport généré : /home/claude/projet_etl_dvf/output/reports/rapport_20260618_124039.html
+2026-06-18 12:40:39,188 [INFO] 
+============================================================
+2026-06-18 12:40:39,188 [INFO] ✅ PIPELINE TERMINÉ en 8.4s | 0 erreur(s)
+2026-06-18 12:40:39,188 [INFO] 📄 Rapport : /home/claude/projet_etl_dvf/output/reports/rapport_20260618_124039.html
+2026-06-18 12:40:39,188 [INFO] ============================================================
+2026-06-18 12:40:43,028 [INFO] 
+🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-06-18 12:40:43,028 [INFO] PIPELINE ETL DVF | années=[2022, 2023] | depts=['75'] | mode=incremental
+2026-06-18 12:40:43,028 [INFO] 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+
+2026-06-18 12:40:43,243 [INFO] [init_db] Base initialisée : /home/claude/projet_etl_dvf/data/dw_dvf.db
+2026-06-18 12:40:43,327 [INFO] 
+============================================================
+2026-06-18 12:40:43,327 [INFO] ▶ Démarrage : Phase 1 - Extraction
+2026-06-18 12:40:43,327 [INFO] ============================================================
+2026-06-18 12:40:43,333 [INFO] ============================================================
+2026-06-18 12:40:43,333 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 12:40:43,333 [INFO] ============================================================
+2026-06-18 12:40:43,333 [INFO] [download_dvf] Fichier déjà présent : /home/claude/projet_etl_dvf/data/raw/dvf_2022_75.csv — téléchargement ignoré.
+2026-06-18 12:40:43,333 [INFO] [download_dvf] Fichier déjà présent : /home/claude/projet_etl_dvf/data/raw/dvf_2023_75.csv — téléchargement ignoré.
+2026-06-18 12:40:43,335 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 12:40:43,356 [INFO]   → 6,324 lignes chargées
+2026-06-18 12:40:43,357 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 12:40:43,374 [INFO]   → 6,287 lignes chargées
+2026-06-18 12:40:43,377 [INFO] [load_raw_files] Total : 12,611 lignes, 22 colonnes
+2026-06-18 12:40:43,377 [INFO] [profile] Calcul du profilage…
+2026-06-18 12:40:43,578 [INFO] [profile] Rapport de profilage sauvegardé : /home/claude/projet_etl_dvf/output/profile_dvf.csv
+2026-06-18 12:40:43,581 [WARNING] [profile] Colonnes avec >50% de valeurs manquantes :
+        colonne  pct_manquants
+surface_terrain          70.05
+2026-06-18 12:40:43,581 [INFO] PHASE 1 terminée — 12,611 lignes extraites
+2026-06-18 12:40:43,586 [INFO] ✅ Phase 1 - Extraction terminée en 0.25s — 12,611 lignes en sortie
+2026-06-18 12:40:43,586 [INFO] 
+============================================================
+2026-06-18 12:40:43,586 [INFO] ▶ Démarrage : Phase 2 - Nettoyage
+2026-06-18 12:40:43,586 [INFO] ============================================================
+2026-06-18 12:40:43,586 [INFO] ============================================================
+2026-06-18 12:40:43,586 [INFO] PHASE 2 — NETTOYAGE
+2026-06-18 12:40:43,586 [INFO] ============================================================
+2026-06-18 12:40:43,586 [INFO] Lignes en entrée : 12,611
+2026-06-18 12:40:43,586 [INFO] [dedup] Déduplication des mutations…
+2026-06-18 12:40:49,923 [INFO] [dedup] 12,611 lignes → 12,000 mutations uniques (supprimé 611 doublons)
+2026-06-18 12:40:49,941 [INFO] [types] Conversion des types…
+2026-06-18 12:40:49,968 [INFO] [types] Conversions appliquées.
+2026-06-18 12:40:49,971 [INFO] [filter] Filtrage des anomalies…
+2026-06-18 12:40:49,977 [INFO] [filter] Après filtre nature_mutation : 11,641 lignes
+2026-06-18 12:40:49,987 [INFO] [filter] Après tous les filtres : 11,522 lignes conservées
+2026-06-18 12:40:50,051 [INFO] [output] dvf_clean.csv → 11,522 lignes
+2026-06-18 12:40:50,055 [INFO] [output] rejets_clean.csv → 478 lignes
+2026-06-18 12:40:50,055 [INFO] [output] stats_clean.json sauvegardé
+2026-06-18 12:40:50,056 [INFO] PHASE 2 terminée — 11,522 mutations nettes / 478 rejetées
+2026-06-18 12:40:50,065 [INFO] ✅ Phase 2 - Nettoyage terminée en 6.47s — 11,522 lignes en sortie
+2026-06-18 12:40:50,065 [INFO] 
+============================================================
+2026-06-18 12:40:50,065 [INFO] ▶ Démarrage : Phase 3 - Enrichissement
+2026-06-18 12:40:50,065 [INFO] ============================================================
+2026-06-18 12:40:50,066 [INFO] ============================================================
+2026-06-18 12:40:50,066 [INFO] PHASE 3 — ENRICHISSEMENT
+2026-06-18 12:40:50,066 [INFO] ============================================================
+2026-06-18 12:40:50,066 [INFO] Lignes en entrée : 11,522
+2026-06-18 12:40:50,066 [INFO] [communes] Chargement depuis le cache : /home/claude/projet_etl_dvf/data/raw/communes_insee.csv
+2026-06-18 12:40:50,066 [INFO] [communes] Chargé : 20 communes (sep=',', enc=utf-8)
+2026-06-18 12:40:50,067 [INFO] [communes] Colonnes disponibles : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-18 12:40:50,068 [INFO] [communes] Référentiel normalisé : 20 communes, colonnes : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-18 12:40:50,068 [INFO] [geo] Jointure géographique…
+2026-06-18 12:40:50,076 [INFO] [geo] Taux de jointure : 100.0% (11,522/11,522)
+2026-06-18 12:40:50,078 [INFO] [prix_m2] Calculé pour 9,579 mutations
+2026-06-18 12:40:50,084 [INFO] [categorie_prix] Distribution : {'premium': 6580, 'eleve': 2668, 'bas': 1943, 'moyen': 331}
+2026-06-18 12:40:50,096 [INFO] [temps] Colonnes temporelles ajoutées : annee, mois, trimestre, semestre
+2026-06-18 12:40:50,099 [INFO] [grand_appart] 2,935 grands appartements (>= 4 pièces)
+2026-06-18 12:40:50,207 [INFO] [output] dvf_enrich.csv → 11,522 lignes
+2026-06-18 12:40:50,208 [INFO] PHASE 3 terminée — 11,522 mutations enrichies
+2026-06-18 12:40:50,218 [INFO] ✅ Phase 3 - Enrichissement terminée en 0.14s — 11,522 lignes en sortie
+2026-06-18 12:40:50,218 [INFO] 
+============================================================
+2026-06-18 12:40:50,218 [INFO] ▶ Démarrage : Phase 4 - Chargement DW
+2026-06-18 12:40:50,218 [INFO] ============================================================
+2026-06-18 12:40:50,218 [INFO] ============================================================
+2026-06-18 12:40:50,218 [INFO] PHASE 4 — CHARGEMENT DW
+2026-06-18 12:40:50,218 [INFO] ============================================================
+2026-06-18 12:40:50,218 [INFO] Lignes en entrée : 11,522 | Mode : incremental
+2026-06-18 12:40:50,219 [INFO] [init_db] Base initialisée : /home/claude/projet_etl_dvf/data/dw_dvf.db
+2026-06-18 12:40:50,219 [INFO] [staging] Chargement en staging…
+2026-06-18 12:40:50,295 [INFO] [staging] 11,522 lignes insérées en staging
+2026-06-18 12:40:50,301 [INFO] [dim_commune] 20 communes en base
+2026-06-18 12:40:50,304 [INFO] [dim_type_local] 3 types chargés
+2026-06-18 12:40:50,307 [INFO] [dim_nature_mutation] 1 natures chargées
+2026-06-18 12:40:50,335 [INFO] [dim_date] 730 dates chargées
+2026-06-18 12:40:50,336 [INFO] [fact] Mode incrémental — watermark : 2023-12-31
+2026-06-18 12:40:50,340 [INFO] [fact] Aucune nouvelle donnée depuis le dernier watermark.
+2026-06-18 12:40:50,341 [INFO] [validation] fact_mutation : 11,522 lignes
+2026-06-18 12:40:50,341 [INFO] [validation] FK null (sk_commune) : 0
+2026-06-18 12:40:50,341 [INFO] PHASE 4 terminée — 0 nouvelles mutations dans fact_mutation (total: 11,522)
+2026-06-18 12:40:50,344 [INFO] ✅ Phase 4 - Chargement DW terminée en 0.12s — 11,522 lignes en sortie
+2026-06-18 12:40:50,346 [INFO] [rapport] Rapport généré : /home/claude/projet_etl_dvf/output/reports/rapport_20260618_124050.html
+2026-06-18 12:40:50,346 [INFO] 
+============================================================
+2026-06-18 12:40:50,346 [INFO] ✅ PIPELINE TERMINÉ en 7.0s | 0 erreur(s)
+2026-06-18 12:40:50,346 [INFO] 📄 Rapport : /home/claude/projet_etl_dvf/output/reports/rapport_20260618_124050.html
+2026-06-18 12:40:50,346 [INFO] ============================================================
+2026-06-18 15:49:41,781 [INFO] 
+🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-06-18 15:49:41,782 [INFO] PIPELINE ETL DVF | années=[2022, 2023] | depts=['75'] | mode=full
+2026-06-18 15:49:41,782 [INFO] 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+
+2026-06-18 15:49:45,501 [INFO] [init_db] Base initialisée : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+2026-06-18 15:49:45,745 [INFO] 
+============================================================
+2026-06-18 15:49:45,745 [INFO] ▶ Démarrage : Phase 1 - Extraction
+2026-06-18 15:49:45,745 [INFO] ============================================================
+2026-06-18 15:49:45,953 [INFO] ============================================================
+2026-06-18 15:49:45,954 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 15:49:45,954 [INFO] ============================================================
+2026-06-18 15:49:45,954 [INFO] [download_dvf] Fichier déjà présent : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\dvf_2022_75.csv — téléchargement ignoré.
+2026-06-18 15:49:45,954 [INFO] [download_dvf] Fichier déjà présent : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\dvf_2023_75.csv — téléchargement ignoré.
+2026-06-18 15:49:45,958 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 15:50:30,734 [INFO]   → 4,676,187 lignes chargées
+2026-06-18 15:50:30,768 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 15:51:07,425 [INFO]   → 3,817,426 lignes chargées
+2026-06-18 15:51:09,257 [INFO] [load_raw_files] Total : 8,493,613 lignes, 41 colonnes
+2026-06-18 15:51:10,814 [INFO] [profile] Calcul du profilage…
+2026-06-18 15:54:54,261 [INFO] [profile] Rapport de profilage sauvegardé : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\output\profile_dvf.csv
+2026-06-18 15:54:54,278 [WARNING] [profile] Colonnes avec >50% de valeurs manquantes :
+                     colonne  pct_manquants
+             adresse_suffixe          95.50
+         ancien_code_commune         100.00
+          ancien_nom_commune         100.00
+          ancien_id_parcelle         100.00
+               numero_volume          99.78
+                 lot1_numero          68.02
+         lot1_surface_carrez          91.03
+                 lot2_numero          90.22
+         lot2_surface_carrez          97.02
+                 lot3_numero          98.24
+         lot3_surface_carrez          99.66
+                 lot4_numero          99.44
+         lot4_surface_carrez          99.92
+                 lot5_numero          99.76
+         lot5_surface_carrez          99.97
+         surface_reelle_bati          66.74
+code_nature_culture_speciale          95.76
+     nature_culture_speciale          95.76
+2026-06-18 15:54:54,279 [INFO] PHASE 1 terminée — 8,493,613 lignes extraites
+2026-06-18 15:54:54,289 [INFO] ✅ Phase 1 - Extraction terminée en 308.54s — 8,493,613 lignes en sortie
+2026-06-18 15:54:54,298 [INFO] 
+============================================================
+2026-06-18 15:54:54,298 [INFO] ▶ Démarrage : Phase 2 - Nettoyage
+2026-06-18 15:54:54,299 [INFO] ============================================================
+2026-06-18 15:54:54,299 [INFO] ============================================================
+2026-06-18 15:54:54,299 [INFO] PHASE 2 — NETTOYAGE
+2026-06-18 15:54:54,299 [INFO] ============================================================
+2026-06-18 15:54:54,300 [INFO] Lignes en entrée : 8,493,613
+2026-06-18 15:54:54,300 [INFO] [dedup] Déduplication des mutations…
+2026-06-18 15:56:17,840 [ERROR] ❌ Phase 2 - Nettoyage a échoué après 83.52s : nan
+2026-06-18 15:56:21,054 [ERROR] Pipeline interrompu à la Phase 2.
+2026-06-18 15:56:21,079 [INFO] [rapport] Rapport généré : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\output\reports\rapport_20260618_155621.html
+2026-06-18 15:57:47,324 [INFO] ============================================================
+2026-06-18 15:57:47,324 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 15:57:47,324 [INFO] ============================================================
+2026-06-18 15:57:47,324 [INFO] [download_dvf] Fichier déjà présent : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\dvf_2022_75.csv — téléchargement ignoré.
+2026-06-18 15:57:47,325 [INFO] [download_dvf] Fichier déjà présent : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\dvf_2023_75.csv — téléchargement ignoré.
+2026-06-18 15:57:47,329 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 15:58:28,345 [INFO]   → 4,676,187 lignes chargées
+2026-06-18 15:58:28,347 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 15:59:03,366 [INFO]   → 3,817,426 lignes chargées
+2026-06-18 15:59:04,938 [INFO] [load_raw_files] Total : 8,493,613 lignes, 41 colonnes
+2026-06-18 15:59:06,130 [INFO] [profile] Calcul du profilage…
+2026-06-18 16:02:42,130 [INFO] [profile] Rapport de profilage sauvegardé : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\output\profile_dvf.csv
+2026-06-18 16:02:42,147 [WARNING] [profile] Colonnes avec >50% de valeurs manquantes :
+                     colonne  pct_manquants
+             adresse_suffixe          95.50
+         ancien_code_commune         100.00
+          ancien_nom_commune         100.00
+          ancien_id_parcelle         100.00
+               numero_volume          99.78
+                 lot1_numero          68.02
+         lot1_surface_carrez          91.03
+                 lot2_numero          90.22
+         lot2_surface_carrez          97.02
+                 lot3_numero          98.24
+         lot3_surface_carrez          99.66
+                 lot4_numero          99.44
+         lot4_surface_carrez          99.92
+                 lot5_numero          99.76
+         lot5_surface_carrez          99.97
+         surface_reelle_bati          66.74
+code_nature_culture_speciale          95.76
+     nature_culture_speciale          95.76
+2026-06-18 16:02:42,147 [INFO] PHASE 1 terminée — 8,493,613 lignes extraites
+2026-06-18 16:07:53,973 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 16:08:37,552 [INFO]   → 4,676,187 lignes chargées
+2026-06-18 16:08:37,556 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 16:09:16,334 [INFO]   → 3,817,426 lignes chargées
+2026-06-18 16:09:17,854 [INFO] [load_raw_files] Total : 8,493,613 lignes, 41 colonnes
+2026-06-18 16:09:19,137 [INFO] ============================================================
+2026-06-18 16:09:19,138 [INFO] PHASE 2 — NETTOYAGE
+2026-06-18 16:09:19,138 [INFO] ============================================================
+2026-06-18 16:09:19,138 [INFO] Lignes en entrée : 8,493,613
+2026-06-18 16:09:19,139 [INFO] [dedup] Déduplication des mutations…
+2026-06-18 16:15:27,534 [INFO] ============================================================
+2026-06-18 16:15:27,534 [INFO] PHASE 1 — EXTRACTION
+2026-06-18 16:15:27,535 [INFO] ============================================================
+2026-06-18 16:15:27,535 [INFO] [download_dvf] Fichier déjà présent : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\dvf_2022_75.csv — téléchargement ignoré.
+2026-06-18 16:15:27,535 [INFO] [download_dvf] Fichier déjà présent : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\dvf_2023_75.csv — téléchargement ignoré.
+2026-06-18 16:15:27,540 [INFO] [load_raw_files] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 16:16:08,732 [INFO]   → 4,676,187 lignes chargées
+2026-06-18 16:16:08,735 [INFO] [load_raw_files] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-18 16:16:41,047 [INFO]   → 3,817,426 lignes chargées
+2026-06-18 16:16:42,401 [INFO] [load_raw_files] Total : 8,493,613 lignes, 41 colonnes
+2026-06-18 16:16:43,463 [INFO] [profile] Calcul du profilage…
+2026-06-18 16:20:01,649 [INFO] [profile] Rapport de profilage sauvegardé : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\output\profile_dvf.csv
+2026-06-18 16:20:01,655 [WARNING] [profile] Colonnes avec >50% de valeurs manquantes :
+                     colonne  pct_manquants
+             adresse_suffixe          95.50
+         ancien_code_commune         100.00
+          ancien_nom_commune         100.00
+          ancien_id_parcelle         100.00
+               numero_volume          99.78
+                 lot1_numero          68.02
+         lot1_surface_carrez          91.03
+                 lot2_numero          90.22
+         lot2_surface_carrez          97.02
+                 lot3_numero          98.24
+         lot3_surface_carrez          99.66
+                 lot4_numero          99.44
+         lot4_surface_carrez          99.92
+                 lot5_numero          99.76
+         lot5_surface_carrez          99.97
+         surface_reelle_bati          66.74
+code_nature_culture_speciale          95.76
+     nature_culture_speciale          95.76
+2026-06-18 16:20:01,655 [INFO] PHASE 1 terminée — 8,493,613 lignes extraites
+2026-06-18 16:36:12,424 [INFO] Fichier déjà présent : data\raw\dvf_2022_75.csv
+2026-06-18 16:36:12,425 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2023/departements/75.csv.gz
+2026-06-18 16:36:16,099 [INFO] Fichier sauvegardé : data\raw\dvf_2023_75.csv (2.0 Mo)
+2026-06-18 16:36:16,109 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-18 16:37:05,047 [INFO]   → 4,676,187 lignes chargées
+2026-06-18 16:37:05,050 [INFO] Lecture de dvf_2023_75 (2).csv (séparateur=',')
+2026-06-18 16:37:44,798 [INFO]   → 3,817,426 lignes chargées
+2026-06-18 16:37:44,834 [INFO] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-19 06:13:48,003 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv.gz
+2026-06-19 06:14:24,730 [INFO] Fichier sauvegardé : data\raw\dvf_2022_75.csv (2.4 Mo)
+2026-06-19 06:14:24,740 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2023/departements/75.csv.gz
+2026-06-19 06:14:53,240 [INFO] Fichier sauvegardé : data\raw\dvf_2023_75.csv (2.0 Mo)
+2026-06-19 06:14:53,330 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-19 06:20:28,575 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv.gz
+2026-06-19 06:20:34,698 [INFO] Fichier décompressé et sauvegardé : data\raw\dvf_2022_75.csv (18.7 Mo)
+2026-06-19 06:20:34,703 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2023/departements/75.csv.gz
+2026-06-19 06:20:39,780 [INFO] Fichier décompressé et sauvegardé : data\raw\dvf_2023_75.csv (15.4 Mo)
+2026-06-19 06:20:39,806 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-19 06:20:40,790 [INFO]   → 98,308 lignes chargées
+2026-06-19 06:20:40,807 [INFO] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-19 06:20:41,559 [INFO]   → 80,993 lignes chargées
+2026-06-19 06:20:41,588 [INFO] Total combiné : 179,301 lignes, 41 colonnes
+2026-06-19 06:20:43,218 [INFO] Profilage terminé : 41 colonnes analysées
+2026-06-19 06:20:43,224 [INFO] Profil exporté → output\profile_dvf.csv
+2026-06-19 06:28:33,720 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-19 06:28:34,625 [INFO]   → 98,308 lignes chargées
+2026-06-19 06:28:34,627 [INFO] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-19 06:28:35,333 [INFO]   → 80,993 lignes chargées
+2026-06-19 06:28:35,375 [INFO] Total combiné : 179,301 lignes, 41 colonnes
+2026-06-19 06:28:35,407 [INFO] ============================================================
+2026-06-19 06:28:35,408 [INFO] PHASE 2 — NETTOYAGE
+2026-06-19 06:28:35,408 [INFO] ============================================================
+2026-06-19 06:28:35,408 [INFO] Lignes en entrée : 179,301
+2026-06-19 06:28:35,408 [INFO] [dedup] Déduplication des mutations…
+2026-06-19 06:30:37,865 [INFO] Lecture de output\dvf_raw_combined.csv
+2026-06-19 06:31:41,005 [INFO] Lecture de output\dvf_raw_combined.csv
+2026-06-19 06:36:57,384 [INFO] Lecture de output\dvf_raw_combined.csv
+2026-06-19 06:38:10,346 [INFO] Lecture de output\dvf_raw_combined.csv
+2026-06-19 06:40:31,499 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2022/departements/75.csv.gz
+2026-06-19 06:40:39,734 [INFO] Fichier décompressé et sauvegardé : data\raw\dvf_2022_75.csv (18.7 Mo)
+2026-06-19 06:40:39,740 [INFO] Téléchargement : https://files.data.gouv.fr/geo-dvf/latest/csv/2023/departements/75.csv.gz
+2026-06-19 06:40:46,143 [INFO] Fichier décompressé et sauvegardé : data\raw\dvf_2023_75.csv (15.4 Mo)
+2026-06-19 06:40:46,166 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-19 06:40:47,113 [INFO]   → 98,308 lignes chargées
+2026-06-19 06:40:47,126 [INFO] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-19 06:40:47,905 [INFO]   → 80,993 lignes chargées
+2026-06-19 06:40:47,938 [INFO] Total combiné : 179,301 lignes, 41 colonnes
+2026-06-19 06:40:50,483 [INFO] Données brutes combinées exportées → output\dvf_raw_combined.csv (179,301 lignes)
+2026-06-19 06:40:52,318 [INFO] Profilage terminé : 41 colonnes analysées
+2026-06-19 06:40:52,320 [INFO] Profil exporté → output\profile_dvf.csv
+2026-06-19 06:41:25,961 [INFO] Lecture de output\dvf_raw_combined.csv
+2026-06-19 06:41:27,992 [INFO] Nettoyage — entrée : 179,301 lignes
+2026-06-19 06:41:27,992 [INFO] Déduplication en cours…
+2026-06-19 06:41:28,590 [INFO] Déduplication : 86,657 mutations → 86,657 lignes conservées
+2026-06-19 06:41:28,824 [INFO] Conversion des types effectuée
+2026-06-19 06:41:28,998 [INFO] Valeurs manquantes : 66 lignes rejetées (valeur_fonciere nulle)
+2026-06-19 06:41:29,068 [INFO] Filtrage aberrations : 704 lignes rejetées
+2026-06-19 06:41:29,250 [INFO] Filtrage nature : 84,657 ventes conservées, 1,230 rejetées
+2026-06-19 06:41:30,700 [INFO] dvf_clean.csv → 84,657 lignes
+2026-06-19 06:41:30,752 [INFO] rejets_clean.csv → 2,000 lignes
+2026-06-19 06:41:30,754 [INFO] stats_clean.json → {'nb_lignes_brutes_entree': 179301, 'nb_mutations_apres_dedup': 86657, 'nb_lignes_conservees': 84657, 'nb_lignes_rejetees': 2000, 'motifs': {'valeur_fonciere nulle': 66, 'valeur_fonciere < 1 000 € (transfert symbolique)': 615, 'valeur_fonciere > 50 000 000 € (outlier extrême)': 89, 'nature_mutation != Vente': 1230}}
+2026-06-19 06:43:53,505 [INFO] ============================================================
+2026-06-19 06:43:53,505 [INFO] PHASE 3 — ENRICHISSEMENT
+2026-06-19 06:43:53,506 [INFO] ============================================================
+2026-06-19 06:43:54,861 [INFO] Lignes en entrée : 84,657
+2026-06-19 06:43:54,861 [INFO] [communes] Téléchargement du référentiel INSEE : https://www.data.gouv.fr/fr/datasets/r/dbe8a621-a9c4-4bc3-9cae-be1699c5ff25
+2026-06-19 06:43:59,587 [INFO] [communes] Référentiel sauvegardé : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\communes_insee.csv
+2026-06-19 06:43:59,901 [INFO] [communes] Chargé : 39,201 communes (sep=',', enc=utf-8)
+2026-06-19 06:43:59,901 [INFO] [communes] Colonnes disponibles : ['code_commune_INSEE', 'nom_commune_postal', 'code_postal', 'libelle_acheminement', 'ligne_5', 'latitude', 'longitude', 'code_commune', 'article', 'nom_commune', 'nom_commune_complet', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 06:43:59,957 [INFO] [communes] Référentiel normalisé : 909 communes, colonnes : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 06:43:59,957 [INFO] [geo] Jointure géographique…
+2026-06-19 06:44:00,212 [INFO] [geo] Taux de jointure : 0.0% (0/84,657)
+2026-06-19 06:44:00,212 [WARNING] [geo] Taux de jointure < 95% — vérifier le référentiel INSEE
+2026-06-19 06:44:00,241 [INFO] [prix_m2] Calculé pour 0 mutations
+2026-06-19 06:44:00,245 [INFO] [categorie_prix] Distribution : {}
+2026-06-19 06:44:00,251 [INFO] [temps] Colonnes temporelles ajoutées : annee, mois, trimestre, semestre
+2026-06-19 06:44:00,253 [INFO] [grand_appart] 0 grands appartements (>= 4 pièces)
+2026-06-19 06:44:00,258 [INFO] [output] dvf_enrich.csv → 0 lignes
+2026-06-19 06:44:02,298 [INFO] [output] rejets_enrich.csv → 84,657 lignes
+2026-06-19 06:44:02,298 [INFO] PHASE 3 terminée — 0 mutations enrichies
+2026-06-19 06:51:28,785 [INFO] ============================================================
+2026-06-19 06:51:28,785 [INFO] PHASE 3 — ENRICHISSEMENT
+2026-06-19 06:51:28,786 [INFO] ============================================================
+2026-06-19 06:51:29,933 [INFO] Lignes en entrée : 84,657
+2026-06-19 06:51:29,933 [INFO] [communes] Chargement depuis le cache : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\communes_insee.csv
+2026-06-19 06:51:30,166 [INFO] [communes] Chargé : 39,201 communes (sep=',', enc=utf-8)
+2026-06-19 06:51:30,167 [INFO] [communes] Colonnes disponibles : ['code_commune_INSEE', 'nom_commune_postal', 'code_postal', 'libelle_acheminement', 'ligne_5', 'latitude', 'longitude', 'code_commune', 'article', 'nom_commune', 'nom_commune_complet', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 06:51:30,228 [INFO] [communes] Référentiel normalisé : 36,013 communes, colonnes : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 06:51:30,229 [INFO] [geo] Jointure géographique…
+2026-06-19 06:51:30,450 [INFO] [geo] Taux de jointure : 100.0% (84,657/84,657)
+2026-06-19 06:51:30,498 [INFO] [prix_m2] Calculé pour 72,241 mutations
+2026-06-19 06:51:30,612 [INFO] [categorie_prix] Distribution : {'eleve': 34258, 'moyen': 19960, 'premium': 16977, 'bas': 13462}
+2026-06-19 06:51:30,789 [INFO] [temps] Colonnes temporelles ajoutées : annee, mois, trimestre, semestre
+2026-06-19 06:51:30,836 [INFO] [grand_appart] 11,855 grands appartements (>= 4 pièces)
+2026-06-19 06:51:33,135 [INFO] [output] dvf_enrich.csv → 84,657 lignes
+2026-06-19 06:51:33,143 [INFO] PHASE 3 terminée — 84,657 mutations enrichies
+2026-06-19 06:54:27,973 [INFO] ============================================================
+2026-06-19 06:54:27,973 [INFO] PHASE 4 — CHARGEMENT DW
+2026-06-19 06:54:27,973 [INFO] ============================================================
+2026-06-19 06:54:29,059 [INFO] Lignes en entrée : 84,657 | Mode : full
+2026-06-19 06:54:29,096 [INFO] [init_db] Base initialisée : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+2026-06-19 06:54:29,096 [INFO] [staging] Chargement en staging…
+2026-06-19 06:54:30,352 [INFO] [staging] 84,657 lignes insérées en staging
+2026-06-19 06:54:30,448 [INFO] [dim_commune] 20 communes en base
+2026-06-19 06:54:30,476 [INFO] [dim_type_local] 5 types chargés
+2026-06-19 06:54:30,503 [INFO] [dim_nature_mutation] 1 natures chargées
+2026-06-19 06:54:30,592 [INFO] [dim_date] 594 dates chargées
+2026-06-19 07:00:05,619 [INFO] ============================================================
+2026-06-19 07:00:05,619 [INFO] PHASE 4 — CHARGEMENT DW
+2026-06-19 07:00:05,619 [INFO] ============================================================
+2026-06-19 07:00:06,964 [INFO] Lignes en entrée : 84,657 | Mode : full
+2026-06-19 07:00:06,971 [INFO] [init_db] Base initialisée : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+2026-06-19 07:00:06,972 [INFO] [staging] Chargement en staging…
+2026-06-19 07:04:00,549 [INFO] ============================================================
+2026-06-19 07:04:00,549 [INFO] PHASE 4 — CHARGEMENT DW
+2026-06-19 07:04:00,549 [INFO] ============================================================
+2026-06-19 07:04:01,753 [INFO] Lignes en entrée : 84,657 | Mode : full
+2026-06-19 07:04:01,796 [INFO] [init_db] Base initialisée : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+2026-06-19 07:04:01,796 [INFO] [staging] Chargement en staging…
+2026-06-19 07:04:02,847 [INFO] [staging] 84,657 lignes insérées en staging
+2026-06-19 07:04:02,892 [INFO] [dim_commune] 20 communes en base
+2026-06-19 07:04:02,922 [INFO] [dim_type_local] 5 types chargés
+2026-06-19 07:04:02,951 [INFO] [dim_nature_mutation] 1 natures chargées
+2026-06-19 07:04:03,036 [INFO] [dim_date] 594 dates chargées
+2026-06-19 07:04:15,537 [INFO] [fact] 84,657 nouvelles mutations insérées / 0 déjà présentes (idempotence) / 0 rejetées
+2026-06-19 07:04:15,696 [INFO] [validation] fact_mutation : 84,657 lignes
+2026-06-19 07:04:15,696 [INFO] [validation] FK null (sk_commune) : 0
+2026-06-19 07:04:15,697 [INFO] PHASE 4 terminée — 84,657 nouvelles mutations dans fact_mutation (total: 84,657)
+2026-06-19 07:10:53,361 [INFO] ######################################################################
+2026-06-19 07:10:53,361 [INFO] PIPELINE ETL DVF — DÉMARRAGE
+2026-06-19 07:10:53,362 [INFO] ######################################################################
+2026-06-19 07:10:53,365 [INFO] [init_db] Base initialisée : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+2026-06-19 07:10:53,365 [INFO] --- Démarrage phase « extract » ---
+2026-06-19 07:10:53,366 [INFO] Fichier déjà présent : data\raw\dvf_2022_75.csv
+2026-06-19 07:10:53,368 [INFO] Fichier déjà présent : data\raw\dvf_2023_75.csv
+2026-06-19 07:10:53,374 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-19 07:10:54,411 [INFO]   → 98,308 lignes chargées
+2026-06-19 07:10:54,413 [INFO] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-19 07:10:55,215 [INFO]   → 80,993 lignes chargées
+2026-06-19 07:10:55,253 [INFO] Total combiné : 179,301 lignes, 41 colonnes
+2026-06-19 07:10:57,706 [INFO] Données brutes combinées exportées → output\dvf_raw_combined.csv (179,301 lignes)
+2026-06-19 07:10:59,476 [INFO] Profilage terminé : 41 colonnes analysées
+2026-06-19 07:10:59,478 [INFO] Profil exporté → output\profile_dvf.csv
+2026-06-19 07:10:59,496 [INFO] --- Phase « extract » OK en 6.1s (2 année(s) x 1 dépt(s) -> 179301) ---
+2026-06-19 07:10:59,497 [INFO] --- Démarrage phase « clean » ---
+2026-06-19 07:10:59,498 [INFO] Nettoyage — entrée : 179,301 lignes
+2026-06-19 07:10:59,498 [INFO] Déduplication en cours…
+2026-06-19 07:11:00,139 [INFO] Déduplication : 86,657 mutations → 86,657 lignes conservées
+2026-06-19 07:11:00,348 [INFO] Conversion des types effectuée
+2026-06-19 07:11:00,508 [INFO] Valeurs manquantes : 66 lignes rejetées (valeur_fonciere nulle)
+2026-06-19 07:11:00,581 [INFO] Filtrage aberrations : 704 lignes rejetées
+2026-06-19 07:11:00,754 [INFO] Filtrage nature : 84,657 ventes conservées, 1,230 rejetées
+2026-06-19 07:11:02,057 [INFO] dvf_clean.csv → 84,657 lignes
+2026-06-19 07:11:02,101 [INFO] rejets_clean.csv → 2,000 lignes
+2026-06-19 07:11:02,102 [INFO] stats_clean.json → {'nb_lignes_brutes_entree': 179301, 'nb_mutations_apres_dedup': 86657, 'nb_lignes_conservees': 84657, 'nb_lignes_rejetees': 2000, 'motifs': {'valeur_fonciere nulle': 66, 'valeur_fonciere < 1 000 € (transfert symbolique)': 615, 'valeur_fonciere > 50 000 000 € (outlier extrême)': 89, 'nature_mutation != Vente': 1230}}
+2026-06-19 07:11:02,125 [INFO] --- Phase « clean » OK en 2.6s (179301 -> 84657) ---
+2026-06-19 07:11:02,125 [INFO] --- Démarrage phase « enrich » ---
+2026-06-19 07:11:02,126 [INFO] ============================================================
+2026-06-19 07:11:02,126 [INFO] PHASE 3 — ENRICHISSEMENT
+2026-06-19 07:11:02,126 [INFO] ============================================================
+2026-06-19 07:11:02,126 [INFO] Lignes en entrée : 84,657
+2026-06-19 07:11:02,126 [INFO] [communes] Chargement depuis le cache : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\communes_insee.csv
+2026-06-19 07:11:02,341 [INFO] [communes] Chargé : 39,201 communes (sep=',', enc=utf-8)
+2026-06-19 07:11:02,342 [INFO] [communes] Colonnes disponibles : ['code_commune_INSEE', 'nom_commune_postal', 'code_postal', 'libelle_acheminement', 'ligne_5', 'latitude', 'longitude', 'code_commune', 'article', 'nom_commune', 'nom_commune_complet', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 07:11:02,402 [INFO] [communes] Référentiel normalisé : 36,013 communes, colonnes : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 07:11:02,403 [INFO] [geo] Jointure géographique…
+2026-06-19 07:11:02,603 [INFO] [geo] Taux de jointure : 100.0% (84,657/84,657)
+2026-06-19 07:11:02,698 [INFO] [prix_m2] Calculé pour 72,241 mutations
+2026-06-19 07:11:02,805 [INFO] [categorie_prix] Distribution : {'eleve': 34258, 'moyen': 19960, 'premium': 16977, 'bas': 13462}
+2026-06-19 07:11:02,960 [INFO] [temps] Colonnes temporelles ajoutées : annee, mois, trimestre, semestre
+2026-06-19 07:11:03,059 [INFO] [grand_appart] 11,855 grands appartements (>= 4 pièces)
+2026-06-19 07:11:04,895 [INFO] [output] dvf_enrich.csv → 84,657 lignes
+2026-06-19 07:11:04,897 [INFO] PHASE 3 terminée — 84,657 mutations enrichies
+2026-06-19 07:11:04,920 [INFO] --- Phase « enrich » OK en 2.8s (84657 -> 84657) ---
+2026-06-19 07:11:04,921 [INFO] --- Démarrage phase « load » ---
+2026-06-19 07:11:04,921 [INFO] ============================================================
+2026-06-19 07:11:04,921 [INFO] PHASE 4 — CHARGEMENT DW
+2026-06-19 07:11:04,921 [INFO] ============================================================
+2026-06-19 07:11:04,988 [INFO] Lignes en entrée : 84,657 | Mode : full
+2026-06-19 07:11:04,992 [INFO] [init_db] Base initialisée : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+2026-06-19 07:11:04,992 [INFO] [staging] Chargement en staging…
+2026-06-19 07:11:06,269 [INFO] [staging] 84,657 lignes insérées en staging
+2026-06-19 07:11:06,308 [INFO] [dim_commune] 20 communes en base
+2026-06-19 07:11:06,331 [INFO] [dim_type_local] 5 types chargés
+2026-06-19 07:11:06,355 [INFO] [dim_nature_mutation] 1 natures chargées
+2026-06-19 07:11:06,435 [INFO] [dim_date] 594 dates chargées
+2026-06-19 07:11:17,349 [INFO] [fact] 0 nouvelles mutations insérées / 84,657 déjà présentes (idempotence) / 0 rejetées
+2026-06-19 07:11:17,444 [INFO] [validation] fact_mutation : 84,657 lignes
+2026-06-19 07:11:17,444 [INFO] [validation] FK null (sk_commune) : 0
+2026-06-19 07:11:17,444 [INFO] PHASE 4 terminée — 0 nouvelles mutations dans fact_mutation (total: 84,657)
+2026-06-19 07:11:17,464 [INFO] --- Phase « load » OK en 12.5s (84657 -> 84657) ---
+2026-06-19 07:11:17,600 [INFO] [rapport] Rapport de supervision généré : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\output\reports\rapport_pipeline_20260619_071117.txt
+2026-06-19 07:11:17,600 [INFO] ######################################################################
+2026-06-19 07:11:17,601 [INFO] PIPELINE ETL DVF — TERMINÉ (SUCCESS)
+2026-06-19 07:11:17,601 [INFO] Rapport : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\output\reports\rapport_pipeline_20260619_071117.txt
+2026-06-19 07:11:17,601 [INFO] ######################################################################
+2026-06-19 08:34:31,342 [INFO] ============================================================
+2026-06-19 08:34:31,342 [INFO] PHASE 3 — ENRICHISSEMENT
+2026-06-19 08:34:31,343 [INFO] ============================================================
+2026-06-19 08:34:32,691 [INFO] Lignes en entrée : 84,657
+2026-06-19 08:34:32,691 [INFO] [communes] Chargement depuis le cache : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\raw\communes_insee.csv
+2026-06-19 08:34:32,996 [INFO] [communes] Chargé : 39,201 communes (sep=',', enc=utf-8)
+2026-06-19 08:34:32,996 [INFO] [communes] Colonnes disponibles : ['code_commune_INSEE', 'nom_commune_postal', 'code_postal', 'libelle_acheminement', 'ligne_5', 'latitude', 'longitude', 'code_commune', 'article', 'nom_commune', 'nom_commune_complet', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 08:34:33,090 [INFO] [communes] Référentiel normalisé : 36,013 communes, colonnes : ['code_commune', 'nom_commune', 'code_departement', 'nom_departement', 'code_region', 'nom_region']
+2026-06-19 08:34:33,090 [INFO] [geo] Jointure géographique…
+2026-06-19 08:34:33,421 [INFO] [geo] Taux de jointure : 100.0% (84,657/84,657)
+2026-06-19 08:34:33,484 [INFO] [prix_m2] Calculé pour 72,241 mutations
+2026-06-19 08:34:33,668 [INFO] [categorie_prix] Distribution : {'eleve': 34258, 'moyen': 19960, 'premium': 16977, 'bas': 13462}
+2026-06-19 08:34:33,857 [INFO] [temps] Colonnes temporelles ajoutées : annee, mois, trimestre, semestre
+2026-06-19 08:34:33,921 [INFO] [grand_appart] 11,855 grands appartements (>= 4 pièces)
+2026-06-19 08:34:36,172 [INFO] [output] dvf_enrich.csv → 84,657 lignes
+2026-06-19 08:34:36,174 [INFO] PHASE 3 terminée — 84,657 mutations enrichies
+2026-06-19 08:35:18,387 [INFO] Lecture de output\dvf_raw_combined.csv
+2026-06-19 08:35:19,956 [INFO] Nettoyage — entrée : 179,301 lignes
+2026-06-19 08:35:19,956 [INFO] Déduplication en cours…
+2026-06-19 08:35:20,428 [INFO] Déduplication : 86,657 mutations → 86,657 lignes conservées
+2026-06-19 08:35:20,593 [INFO] Conversion des types effectuée
+2026-06-19 08:35:20,751 [INFO] Valeurs manquantes : 66 lignes rejetées (valeur_fonciere nulle)
+2026-06-19 08:35:20,817 [INFO] Filtrage aberrations : 704 lignes rejetées
+2026-06-19 08:35:20,980 [INFO] Filtrage nature : 84,657 ventes conservées, 1,230 rejetées
+2026-06-19 08:35:22,127 [INFO] dvf_clean.csv → 84,657 lignes
+2026-06-19 08:35:22,172 [INFO] rejets_clean.csv → 2,000 lignes
+2026-06-19 08:35:22,173 [INFO] stats_clean.json → {'nb_lignes_brutes_entree': 179301, 'nb_mutations_apres_dedup': 86657, 'nb_lignes_conservees': 84657, 'nb_lignes_rejetees': 2000, 'motifs': {'valeur_fonciere nulle': 66, 'valeur_fonciere < 1 000 € (transfert symbolique)': 615, 'valeur_fonciere > 50 000 000 € (outlier extrême)': 89, 'nature_mutation != Vente': 1230}}
+2026-06-19 09:24:46,199 [INFO] Fichier déjà présent : data\raw\dvf_2022_75.csv
+2026-06-19 09:24:46,200 [INFO] Fichier déjà présent : data\raw\dvf_2023_75.csv
+2026-06-19 09:24:46,217 [INFO] Lecture de dvf_2022_75.csv (séparateur=',')
+2026-06-19 09:24:47,098 [INFO]   → 98,308 lignes chargées
+2026-06-19 09:24:47,119 [INFO] Lecture de dvf_2023_75.csv (séparateur=',')
+2026-06-19 09:24:47,820 [INFO]   → 80,993 lignes chargées
+2026-06-19 09:24:47,850 [INFO] Total combiné : 179,301 lignes, 41 colonnes
+2026-06-19 09:24:49,946 [INFO] Données brutes combinées exportées → output\dvf_raw_combined.csv (179,301 lignes)
+2026-06-19 09:24:51,894 [INFO] Profilage terminé : 41 colonnes analysées
+2026-06-19 09:24:51,898 [INFO] Profil exporté → output\profile_dvf.csv

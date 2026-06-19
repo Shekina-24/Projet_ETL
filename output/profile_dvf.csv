@@ -1,0 +1,42 @@
+colonne,type_detecte,nb_manquants,pct_manquants,nb_uniques,min,max,moyenne,top5_valeurs
+id_mutation,object,0,0.0,86657,,,,2022-1671153(988) | 2023-1334069(656) | 2023-1361229(510) | 2022-1647949(438) | 2023-1361004(427)
+date_mutation,object,0,0.0,596,,,,2022-04-19(2359) | 2023-12-21(1018) | 2023-08-01(979) | 2022-06-30(959) | 2023-05-16(955)
+numero_disposition,object,0,0.0,6,,,,000001(177964) | 000002(1268) | 000003(51) | 000004(14) | 000005(3)
+nature_mutation,object,0,0.0,6,,,,Vente(176140) | Vente en l'état futur d'achèvement(1455) | Echange(1289) | Adjudication(384) | Vente terrain à bâtir(32)
+valeur_fonciere,object,2712,1.51,20866,0.15,1003401470.0,3810498.53,
+adresse_numero,object,653,0.36,385,,,,6(5353) | 5(4701) | 8(4458) | 10(4454) | 7(4396)
+adresse_suffixe,object,171682,95.75,11,,,,B(6026) | A(997) | T(430) | P(66) | C(36)
+adresse_nom_voie,object,628,0.35,3705,,,,RUE LECOURBE(1177) | RUE DE VAUGIRARD(1124) | RUE SAINT MAUR(926) | RUE DU FBG ST ANTOINE(874) | RUE DES PYRENEES(739)
+adresse_code_voie,object,628,0.35,3686,,,,5456(1177) | 9624(1124) | 8699(926) | 3514(874) | 7904(739)
+code_postal,object,630,0.35,20,,,,75015(18735) | 75016(17282) | 75018(16781) | 75017(14999) | 75011(13017)
+code_commune,object,0,0.0,20,,,,75115(18809) | 75116(17284) | 75118(16852) | 75117(15015) | 75111(13018)
+nom_commune,object,0,0.0,20,,,,Paris 15e Arrondissement(18809) | Paris 16e Arrondissement(17284) | Paris 18e Arrondissement(16852) | Paris 17e Arrondissement(15015) | Paris 11e Arrondissement(13018)
+code_departement,object,0,0.0,1,,,,75(179301)
+ancien_code_commune,object,179301,100.0,0,,,,
+ancien_nom_commune,object,179301,100.0,0,,,,
+id_parcelle,object,0,0.0,31534,,,,75109000AG0020(656) | 75113000DK0006(510) | 75106000AC0044(450) | 75119000AE0001(444) | 75118000CW0067(435)
+ancien_id_parcelle,object,179301,100.0,0,,,,
+numero_volume,object,178339,99.46,501,,,,2(66) | 1(42) | 3(33) | 4(27) | 5(20)
+lot1_numero,object,16548,9.23,3574,,,,10(4124) | 11(3843) | 13(3720) | 12(3504) | 1(3418)
+lot1_surface_carrez,object,110255,61.49,12033,0.2,9532.0,120.8,
+lot2_numero,object,100874,56.26,2119,,,,8(2055) | 9(1995) | 7(1890) | 6(1824) | 5(1750)
+lot2_surface_carrez,object,158083,88.17,6896,0.61,1010.0,63.63,
+lot3_numero,object,165918,92.54,577,,,,9(408) | 8(347) | 7(340) | 6(337) | 5(297)
+lot3_surface_carrez,object,177096,98.77,1100,1.0,1091.53,91.27,
+lot4_numero,object,174305,97.21,366,,,,9(181) | 5(137) | 8(129) | 7(118) | 6(116)
+lot4_surface_carrez,object,178710,99.67,316,1.01,597.37,96.38,
+lot5_numero,object,177268,98.87,255,,,,9(55) | 5(51) | 6(46) | 7(44) | 4(42)
+lot5_surface_carrez,object,179122,99.9,97,7.21,1010.0,110.84,
+nombre_lots,object,0,0.0,38,0.0,152.0,1.48,
+code_type_local,object,2109,1.18,4,,,,3(86342) | 2(79043) | 4(11429) | 1(378)
+type_local,object,2109,1.18,4,,,,Dépendance(86342) | Appartement(79043) | Local industriel. commercial ou assimilé(11429) | Maison(378)
+surface_reelle_bati,object,88508,49.36,852,1.0,12579.0,65.26,
+nombre_pieces_principales,object,2127,1.19,19,0.0,34.0,1.08,
+code_nature_culture,object,163735,91.32,4,,,,S(15366) | AG(155) | CH(23) | AB(22)
+nature_culture,object,163735,91.32,4,,,,sols(15366) | terrains d'agrément(155) | chemin de fer(23) | terrains a bâtir(22)
+code_nature_culture_speciale,object,179152,99.92,2,,,,IMM(147) | PARC(2)
+nature_culture_speciale,object,179152,99.92,2,,,,Dépendances d'ensemble immobilier(147) | Parc(2)
+surface_terrain,object,164063,91.5,609,1.0,20523.0,1024.4,
+longitude,object,386,0.22,27953,2.26,2.42,2.34,
+latitude,object,386,0.22,25247,48.82,48.9,48.86,
+_source_file,object,0,0.0,2,,,,dvf_2022_75.csv(98308) | dvf_2023_75.csv(80993)

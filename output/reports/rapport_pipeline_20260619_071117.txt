@@ -1,0 +1,53 @@
+======================================================================
+RAPPORT DE SUPERVISION - PIPELINE ETL DVF
+======================================================================
+Date d'exécution : 2026-06-19T07:11:17.465090
+Mode             : full
+Années traitées  : [2022, 2023]
+Départements     : ['75']
+Base SQLite      : C:\Users\sheki\Downloads\projet_etl_dvf\projet_etl_dvf\data\dw_dvf.db
+
+----------------------------------------------------------------------
+DÉTAIL PAR PHASE
+----------------------------------------------------------------------
+
+Phase        : extract
+Statut       : SUCCESS
+Début        : 2026-06-19T05:10:53.365771
+Fin          : 2026-06-19T05:10:59.479218
+Durée        : 6.11s
+Lignes entrée: 2 année(s) x 1 dépt(s)
+Lignes sortie: 179301
+
+Phase        : clean
+Statut       : SUCCESS
+Début        : 2026-06-19T05:10:59.497389
+Fin          : 2026-06-19T05:11:02.104385
+Durée        : 2.61s
+Lignes entrée: 179301
+Lignes sortie: 84657
+
+Phase        : enrich
+Statut       : SUCCESS
+Début        : 2026-06-19T05:11:02.125753
+Fin          : 2026-06-19T05:11:04.906859
+Durée        : 2.78s
+Lignes entrée: 84657
+Lignes sortie: 84657
+
+Phase        : load
+Statut       : SUCCESS
+Début        : 2026-06-19T05:11:04.921236
+Fin          : 2026-06-19T05:11:17.461340
+Durée        : 12.54s
+Lignes entrée: 84657
+Lignes sortie: 84657
+
+----------------------------------------------------------------------
+STATUT GLOBAL DU PIPELINE : SUCCESS
+DURÉE TOTALE              : 24.04s
+----------------------------------------------------------------------
+
+ANOMALIES DÉTECTÉES
+----------------------------------------------------------------------
+  Aucune anomalie notable détectée.

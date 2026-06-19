@@ -1,0 +1,12 @@
+{
+  "nb_lignes_brutes_entree": 179301,
+  "nb_mutations_apres_dedup": 86657,
+  "nb_lignes_conservees": 84657,
+  "nb_lignes_rejetees": 2000,
+  "motifs": {
+    "valeur_fonciere nulle": 66,
+    "valeur_fonciere < 1 000 € (transfert symbolique)": 615,
+    "valeur_fonciere > 50 000 000 € (outlier extrême)": 89,
+    "nature_mutation != Vente": 1230
+  }
+}
